@@ -38,7 +38,7 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100 px-4">
+    <div className="h-dvh md:min-h-screen flex items-center justify-center bg-gray-100 px-4 overflow-y-auto md:overflow-visible">
       <div className="w-full flex flex-col items-center">
         <h1 className="text-3xl font-semibold text-center text-black mb-8 md:mb-16">
           Welcome, Log into your account
