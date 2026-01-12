@@ -1,5 +1,11 @@
- import SignupPage from "./register/SignupPage";
+//  import SignupPage from "./register/page";
+ import TopMenu from "./components/TopMenu";
 
  export default function Home() {
-   return <SignupPage />;
+   return (
+     <div>
+       <TopMenu />
+      
+     </div>
+   );
  }
