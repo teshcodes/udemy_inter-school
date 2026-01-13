@@ -1,11 +1,12 @@
-//  import SignupPage from "./register/page";
- import TopMenu from "./components/TopMenu";
+import TopMenu from "./components/TopMenu";
+import Dashboard from "./dashboard/page";
 
- export default function Home() {
-   return (
-     <div>
-       <TopMenu />
-      
-     </div>
-   );
- }
+export default function Home() {
+  return (
+    <div>
+  
+        <TopMenu />
+        <Dashboard />
+    </div>
+  );
+}
