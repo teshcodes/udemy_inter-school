@@ -12,12 +12,21 @@ export default function TopMenu() {
 
   const menuItems = [
     { label: "Home", path: "/" },
-    { label: "Pricing", path: "/pricing" },
+    { label: "Pricing", path: "#pricing" },
     { label: "Use cases", path: "/use-cases" },
     { label: "Location", path: "/location" },
     { label: "FAQ", path: "/faq" },
     { label: "Company", path: "/company" },
   ];
+
+  const handleNavigation = (path: string) => {
+    if (path.startsWith("#")) {
+      const el = document.querySelector(path);
+      el?.scrollIntoView({ behavior: "smooth" });
+    } else {
+      router.push(path);
+    }
+  };
 
   return (
     <header className="w-full bg-[#100F57] shadow-md px-15 py-10 flex items-center justify-between relative">
@@ -28,7 +37,7 @@ export default function TopMenu() {
           <MenuItem
             key={item.label}
             label={item.label}
-            onClick={() => router.push(item.path)}
+            onClick={() => handleNavigation(item.path)}
           />
         ))}
       </nav>
@@ -60,7 +69,7 @@ export default function TopMenu() {
               key={item.label}
               label={item.label}
               onClick={() => {
-                router.push(item.path);
+                handleNavigation(item.path);
                 setIsMobileMenuOpen(false);
               }}
             />

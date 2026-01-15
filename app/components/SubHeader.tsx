@@ -3,6 +3,11 @@
 import React from "react";
 import Image from "next/image";
 import HeroImage from "./HeroImage";
+import Company from "./Company";
+import Slack from "./Slack";
+import Details from "./Details";
+import Pricing from "./Pricing";
+
 
 interface SubHeaderProps {
     title: string;
@@ -69,6 +74,22 @@ export default function SubHeader({
 
             <div className="relative lg:-mt-80 md:mt-0 mt-0">
                 <HeroImage />
+            </div>
+
+            <div>
+                <Company />
+            </div>
+
+            <div>
+                <Slack />
+            </div>
+
+            <div>
+                <Details />
+            </div>
+
+            <div>
+                <Pricing />
             </div>
         </div>
 
