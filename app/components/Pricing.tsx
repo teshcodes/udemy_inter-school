@@ -17,7 +17,7 @@ export default function Pricing() {
                 </p>
 
                 {/* Cards container */}
-                <div className="flex flex-col md:flex-row gap-8 justify-center items-stretch">
+                <div className="flex flex-col md:flex-row gap-7 justify-center items-stretch">
                     <PricingCard
                         title="Standard"
                         price="15"

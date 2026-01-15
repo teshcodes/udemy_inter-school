@@ -19,11 +19,9 @@ export default function PricingCard({
     return (
         <div
             className="
-               border rounded-2xl p-6 w-full max-w-xs bg-white shadow-sm
-               transition-all duration-300 ease-out
-               hover:scale-[1.07]
-             hover:bg-[#0B0641]
-             hover:text-white
+               border-gray-200 rounded-2xl p-6 w-full sm:max-w-sm lg:max-w-xs bg-white shadow-sm
+               transition-all duration-300 ease-out hover:scale-[1.07] hover:bg-[#0B0641]
+               hover:shadow-2xl hover:-translate-y-2 cursor-pointer hover:text-white
             "
         >
             {/* Plan name */}

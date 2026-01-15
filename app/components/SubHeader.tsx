@@ -7,6 +7,7 @@ import Company from "./Company";
 import Slack from "./Slack";
 import Details from "./Details";
 import Pricing from "./Pricing";
+import UseCases from "../use-cases/page";
 
 
 interface SubHeaderProps {
@@ -90,6 +91,10 @@ export default function SubHeader({
 
             <div>
                 <Pricing />
+            </div>
+
+            <div>
+                <UseCases />
             </div>
         </div>
 
