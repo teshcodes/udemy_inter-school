@@ -203,8 +203,7 @@ export default function TeachersPage() {
   return (
     <div className="flex h-screen bg-[#f4f6f8] overflow-hidden">
 
-      {/* Sidebar — hidden mobile, visible lg+ */}
-      {/* Overlay — tap outside sidebar to close, sits ABOVE sidebar on mobile */}
+      
       {mobileSidebarOpen && (
         <div
           className="fixed inset-0 z-30 bg-black/40 lg:hidden"

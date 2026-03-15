@@ -1,6 +1,6 @@
 "use client";
 
-import { useRouter, usePathname } from "next/navigation";
+import { usePathname } from "next/navigation";
 import {
   MdDashboard,
   MdPeople,
@@ -9,16 +9,16 @@ import {
   MdDescription,
   MdBolt,
 } from "react-icons/md";
-import { FaChalkboardTeacher, FaUserGraduate } from "react-icons/fa";
+import { FaChalkboardTeacher } from "react-icons/fa";
 
 /* ── Nav items ─────────────────────────────────────────── */
 const navItems = [
-  { label: "Dashboard",           icon: MdDashboard,        href: "/dashboard"          },
-  { label: "Teachers",            icon: FaChalkboardTeacher, href: "/dashboard/teachers" },
-  { label: "Students/ classes",   icon: MdPeople,           href: "/dashboard/students" },
-  { label: "Billing",             icon: MdCreditCard,       href: "/dashboard/billing"  },
-  { label: "Settings and profile",icon: MdSettings,         href: "/dashboard/settings" },
-  { label: "Exams",               icon: MdDescription,      href: "/dashboard/exams"    },
+  { label: "Dashboard",            icon: MdDashboard,        href: "/dashboard"  },
+  { label: "Teachers",             icon: FaChalkboardTeacher, href: "/dashboard/teachers"  },
+  { label: "Students/ classes",    icon: MdPeople,           href: "/dashboard/students"   },
+  { label: "Billing",              icon: MdCreditCard,       href: "/dashboard/billing"    },
+  { label: "Settings and profile", icon: MdSettings,         href: "/dashboard/settings"   },
+  { label: "Exams",                icon: MdDescription,      href: "/dashboard/exams"      },
 ];
 
 /* ── Logo ──────────────────────────────────────────────── */
@@ -26,10 +26,10 @@ function Logo() {
   return (
     <div className="w-12 h-12 rounded-full bg-white flex items-center justify-center shadow-md">
       <svg viewBox="0 0 40 40" width="28" height="28">
-        <path d="M8 20 Q8 8 20 8 Q20 20 8 20Z"   fill="#e74c3c" />
-        <path d="M20 8 Q32 8 32 20 Q20 20 20 8Z"  fill="#3498db" />
-        <path d="M8 20 Q8 32 20 32 Q20 20 8 20Z"  fill="#2ecc71" />
-        <path d="M20 20 Q32 20 32 32 Q20 32 20 20Z" fill="#e74c3c" opacity="0.8" />
+        <path d="M8 20 Q8 8 20 8 Q20 20 8 20Z"      fill="#e74c3c" />
+        <path d="M20 8 Q32 8 32 20 Q20 20 20 8Z"     fill="#3498db" />
+        <path d="M8 20 Q8 32 20 32 Q20 20 8 20Z"     fill="#2ecc71" />
+        <path d="M20 20 Q32 20 32 32 Q20 32 20 20Z"  fill="#e74c3c" opacity="0.8" />
       </svg>
     </div>
   );
@@ -77,9 +77,9 @@ export default function SideBar() {
       {/* Features at bottom */}
       <div className="px-2 pb-5 border-t border-white/10 pt-3">
         <a
-          href="/dashboard/features"
+          href="/features"
           className={`w-full flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm transition-all
-            ${pathname === "/dashboard/features"
+            ${pathname === "/features"
               ? "bg-[#2e7dd1] text-white font-medium"
               : "text-white/70 hover:bg-white/10 hover:text-white"
             }`}
